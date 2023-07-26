@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <center>
+        <h1>Primeiro Formulário</h1>
+        <p>Nome: <input type="text" name="Nome" id="inome" placeholder="Digite o seu nome"></p>
+        <p>Sobrenome: <input type="text" name="Sobrenome" id="isobrenome" placeholder="Digite o seu Sobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+
+        <br><br>
+        <h1>Formulário de Validação</h1>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <form action="main.js" method="get">
+                <p> <label for="inome">Nome: </label>
+                <input type="text" name="Nome" id="inome" placeholder="Digite o seu Nome" minlength="6" maxlength="40" required name="Nome"></p>
+                <p>
+                    <label for="isobrenome">Sobrenome: </label>
+                    <input type="text" name="Sobrenome" id="isobrenome" placeholder="Digite o seu Sobrenome" minlength="6" maxlength="40" required name="Sobrenome">
+                </p>
+                <p>
+                    <label for="icidade">Cidade: </label>
+                    <input type="text" name="Cidade" id="icidade" placeholder="Digite a sua Cidade" minlength="6" maxlength="40" required name="Cidade">
+                </p>
+                <p>
+                    <label for="iemail">Email: </label>
+                    <input type="text" name="Email" id="iemail" placeholder="Digite seu Email" minlength="6" maxlength="40" required name="Email">
+                </p>
+                <p>
+                    <label for="idatadenascimento">Data De Nascimento: </label>
+                    <input type="date" name="Data De Nascimento" id="idatadenascimento" placeholder="Informe a sua Data de Nascimento" minlength="6" maxlength="40" required name="Data de Nascimento">
+                </p>
+                <p><input type="submit" value="Enviar"></p>
+            </form>
+        </fieldset>
+    </center>
+    
+</body>
+</html>
